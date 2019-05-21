@@ -56,6 +56,12 @@ def answer(first, second, third):
     return statement(msg)
 
 
+@ask.intent("NoIntent")
+def nointent():
+    no_msg = "Ok, see you next time"
+    return statement(no_msg)
+
+
 if __name__ == '__main__':
 
     app.run(debug=True)
